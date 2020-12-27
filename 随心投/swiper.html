@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入样式文件 -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/vant@2.11/lib/index.css"
+    />
+    <!-- 引入 Vue 和 Vant 的 JS 文件 -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vant@2.11/lib/vant.min.js"></script>
+
+    <style>
+        .my-swipe .van-swipe-item {
+        color: #fff;
+        font-size: 20px;
+        line-height: 150px;
+        text-align: center;
+        background-color: #39a9ed;
+      }
+    </style>
+
+    
+</head>
+<body>
+    <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+        <van-swipe-item>1</van-swipe-item>
+        <van-swipe-item>2</van-swipe-item>
+        <van-swipe-item>3</van-swipe-item>
+        <van-swipe-item>4</van-swipe-item>
+      </van-swipe>
+    
+</body>
+
+
+
+
+
+</html>
