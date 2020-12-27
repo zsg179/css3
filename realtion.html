@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 子元素选择器 */
+       /*  div > span {  
+            color: red;
+        } */
+
+        /* 后代元素选择器 */
+        /* div span{
+            color: red;
+        } */
+
+        /* 兄弟元素选择器 */
+        /* +：下一个兄弟
+           ~：下面所有兄弟
+         */
+        p + span{
+            color: red;
+        }
+        /* p ~ span{
+            color: red;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        我是div
+        <p>我是div里的p元素
+            <span>我是p里的span1</span>
+            <span>我是p里的span2</span>
+            <span>我是p里的span3</span>
+        </p>
+        <span>我是span4</span>
+        <div>我是p的兄弟div</div>
+        <span>我是span5</span>
+        <span>我是span6</span>
+    </div>
+</body>
+</html>

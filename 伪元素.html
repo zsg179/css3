@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            font-size: 30px;
+        }
+        p::first-line{
+            background-color: red;
+        }
+        /* 火狐v59未生效，谷歌生效 */
+        p::selection{
+            background-color: green;
+        }
+        div::before{
+            content: "before";
+        }
+        div::after{
+            content: "after";
+        }
+    </style>
+</head>
+<body>
+    <p>有赞前端团队是由一群年轻、皮实、对技术饱含热情的小伙伴组成的，目前共有 100 多名前端工程师，分布在业务中台、电商、零售、美业、资产、赋能等业务线。
+我们热爱分享和开源，崇尚用工程师的方式解决问题，因此造了很多工具来解决我们遇到的问题，目前我们维护的开源产品有</p>
+    <div>hello css</div>
+    <q>hello</q>
+</body>
+</html>

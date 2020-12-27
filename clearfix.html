@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            background-color: aqua;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+            float: left;
+            margin-top: 100px;
+        }
+        /* 解决高度塌陷和外边距重叠问题 */
+        .clearfix::before,.clearfix::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box1 clearfix">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

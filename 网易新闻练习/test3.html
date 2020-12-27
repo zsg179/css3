@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        
+        a{
+            text-decoration: none;
+        }
+        .news-wrapper{
+            background-color: #fff;
+            width: 300px;
+            height: 319px;
+            margin:50px auto;
+            border-top: 1px solid #ddd;
+        }
+        .news-title{
+            border-top: 1px red solid;
+            display:inline-block;
+            height: 41px;
+            line-height:41px;
+            font-weight: bold;
+            color: #404040;
+            margin-top: -1px;
+        }
+        .news-img{
+            height:150px;
+        }
+        .news-img .img-title{
+            margin-top: -30px;
+            color: #fff;
+            padding-left: 30px;
+            font-weight: bold;
+        }
+        .news-list{
+            margin-top:15px;
+        }
+        .news-list li{
+            margin-bottom: 12px;
+        }
+        .news-list li a{
+            font-size: 14px;
+            color: #666666;
+        }
+        .news-list li a::before{
+            content: "■";
+            margin-right: 5px;
+            font-size: 3px;
+            color: rgb(218, 218, 218);
+        }
+        .news-list li a:hover{
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="news-wrapper">
+        <h2 class="news-title">
+            <a href="#">
+                体育
+            </a>
+        </h2>
+        <div class="news-img">
+            <a href="#">
+                <img src="./img/1.jpg">
+                <h3 class="img-title">NBA球员积极备战 戴上口罩还认得</h3>
+            </a>
+        </div>
+        <ul class="news-list">
+            <li><a href="#">乔治:我爱LA喜欢和LBJ一起打球</a></li>
+            <li><a href="#">格林:3年前降薪就在等KD 特制T恤嘲讽LBJ</a></li>
+            <li><a href="#">塔克4000双鞋让保罗羡慕嫉妒 乔丹被震惊</a></li>
+            <li><a href="#">CBA下季新赛制:常规赛4组循环 增至46轮</a></li>
+        </ul>
+    </div>
+</body>
+</html>
