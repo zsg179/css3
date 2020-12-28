@@ -2,30 +2,51 @@
   margin: 0;
   padding: 0;
 }
-.btn-wraper {
-  width: 700px;
-  height: 500px;
-  background-color: #bbffaa;
+.w,
+.container,
+.swiper-list {
+  width: 18.75rem;
+  height: 36.65rem;
+  margin: 0 auto;
+}
+html {
+  font-size: 5.33333333vw;
+}
+.container {
+  background-image: url("../static/firstBg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.container .share {
+  position: fixed;
+  right: 0;
+  top: 0.45rem;
+  width: 2.75rem;
+}
+.container .share img {
+  width: 100%;
+  vertical-align: top;
+}
+.container .title {
+  width: 15rem;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  padding-bottom: 0.75rem;
+}
+.container .title img {
+  width: 100%;
+  vertical-align: top;
+}
+.swiper-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: auto;
 }
-.btn-wraper .btn {
-  background-color: #776ae7;
-  border-radius: 20px;
+.swiper {
+  flex: none;
+  width: 12.5rem;
 }
-.btn-wraper .box1,
-.btn-wraper .box2 {
-  background-color: white;
-  width: 150px;
-  height: 200px;
-  margin: 20px;
-  transition: all 0.3s;
-}
-.btn-wraper .box1:hover,
-.btn-wraper .box2:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+.swiper img {
+  width: 100%;
 }
 @keyframes btn {
   from {

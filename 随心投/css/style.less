@@ -3,46 +3,61 @@
     padding: 0;
 }
 
-.btn-wraper{
-    width: 700px;
-    height: 500px;
-    background-color: #bbffaa;
+@total-width:750;
+
+.w{
+    width: 750/40rem;
+    height: 1466/40rem;
+    margin: 0 auto;
+}
+
+html{
+    font-size: 100vw/@total-width *40;
+}
+
+.container:extend(.w){
+    background-image: url("../static/firstBg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    // 分享
+    .share{
+        position: fixed;
+        right: 0;
+        top: 18/40rem;
+        width: 110/40rem;
+
+        img{
+            width: 100%;
+            vertical-align: top;
+        }
+    }
+
+    //标题图片
+    .title{
+        width: 600/40rem;
+        margin: 0 auto;
+        padding-top: 60/40rem;
+        padding-bottom: 30/40rem;
+        img{
+            width: 100%;
+            vertical-align: top;
+        }
+    }
+
+}
+
+.swiper-list:extend(.w){
     display: flex;
-    justify-content: center;
-    align-items: center;
-    //position: relative;
+    overflow: auto;
+}
+.swiper{
+    flex: none;
+    width: 500/40rem;
 
-    .btn{
-        // width: 273px;
-        // height: 40px;
-        background-color: #776ae7;
-        border-radius: 20px;
-        //position: absolute;
-        // top: 0;
-        // right: 0;
-        // bottom: 0;
-        // left: 0;
-        // margin: auto;
-        // top: 50%;
-        // left: 50%;
-        // transform: translateX(-50%) translateY(-50%);
-        //animation: btn 1s infinite alternate linear;
+    img{
+        width: 100%;
     }
-
-    .box1,.box2{
-        background-color: white;
-        width: 150px;
-        height: 200px;
-        margin: 20px;
-        transition: all 0.3s;
-    }
-
-    .box1:hover,.box2:hover{
-        transform: translateY(-5px);
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    }
-
-    
 }
 
 @keyframes btn {
